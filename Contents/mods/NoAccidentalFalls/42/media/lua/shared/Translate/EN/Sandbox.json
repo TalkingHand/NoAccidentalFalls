@@ -1,0 +1,9 @@
+{
+    "Sandbox_NoAccidentalFalls": "No Accidental Falls",
+    "Sandbox_NoAccidentalFalls_EdgeGuard": "Block walking off edges",
+    "Sandbox_NoAccidentalFalls_EdgeGuard_tooltip": "Walking or running into open air over a drop (balcony without a railing, roof edge, unfinished floor) stops you at the edge.",
+    "Sandbox_NoAccidentalFalls_ClimbGuard": "Guard climbs over a drop",
+    "Sandbox_NoAccidentalFalls_ClimbGuard_tooltip": "Checks climbs over low fences and railings and through windows. Vanilla already stops running vaults and wall climbs onto a drop.",
+    "Sandbox_NoAccidentalFalls_AllowManualClimb": "Allow deliberate climbs over a drop",
+    "Sandbox_NoAccidentalFalls_AllowManualClimb_tooltip": "On: holding the interact key (E) or choosing Climb Over / Climb Through from the menu still works over a drop. Off: those climbs are refused too, unless the window or railing has a sheet rope."
+}

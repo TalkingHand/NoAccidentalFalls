@@ -1,0 +1,12 @@
+NoAccidentalFalls workshop art. Chosen 2026-11-16: concept E (relaxed walk along the roof edge, arms spread like a balance walker).
+Earlier tries (invisible wall, side view and front view) read as a glass pane or a mime, not as "saved from falling"; dropped.
+Attach: _art/refs/character_sheet.webp + _art/refs/style_doubleclick.png + _art/refs/chalk_zombie_sheet.png
+
+Use the attached character sheet for the character's identity and the attached preview image for art style.
+
+Character (keep exactly): early-30s male survivor, short scruffy brown beard, messy brown hair, faded gray headband, red-and-black buffalo plaid flannel with rolled sleeves over dark gray T-shirt, olive work pants, brown work boots.
+Style: bold black ink outlines, gritty comic style, muted desaturated palette, red accent. Square 1:1 composition, readable at small thumbnail size, no border or panel frame. No text, no onomatopoeia, no glowing effects.
+
+Small on the roof: the chalk zombie from the attached chalk sheet (white chalk stick figure, X eyes, jagged teeth), drawn as chalk on the side of a brick chimney, giving a thumbs-up. No chalk drawing anywhere else in the picture.
+
+Scene: the flat roof of a two-storey house with no railing, seen from the side and slightly below so the two-storey drop to the street is obvious. The man strolls along the very edge of the roof like a tightrope walker showing off: both arms spread wide to the sides, chin up, eyes half closed, a calm smug smile, one boot placed exactly on the edge with the toe a little over the drop, the other boot lifted mid-step. His body is upright and relaxed, not wobbling. Below in the street, three zombies had their arms raised to catch him and now stand there with their arms half lowered, staring up in disbelief. Muted evening sky.

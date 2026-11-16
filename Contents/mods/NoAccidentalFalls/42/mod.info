@@ -1,0 +1,8 @@
+name=No Accidental Falls
+id=NoAccidentalFalls
+description=Stops you from walking off floor edges and (optionally) from climbing railings or windows onto a deadly drop.
+poster=poster.png
+author=TalkingHand
+url=https://github.com/TalkingHand/NoAccidentalFalls
+modversion=0.1.0
+versionMin=42.0

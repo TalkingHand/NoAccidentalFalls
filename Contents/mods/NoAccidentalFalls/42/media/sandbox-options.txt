@@ -1,0 +1,25 @@
+VERSION = 1,
+
+option NoAccidentalFalls.EdgeGuard
+{
+    type = boolean,
+    default = true,
+    page = NoAccidentalFalls,
+    translation = NoAccidentalFalls_EdgeGuard,
+}
+
+option NoAccidentalFalls.ClimbGuard
+{
+    type = boolean,
+    default = true,
+    page = NoAccidentalFalls,
+    translation = NoAccidentalFalls_ClimbGuard,
+}
+
+option NoAccidentalFalls.AllowManualClimb
+{
+    type = boolean,
+    default = true,
+    page = NoAccidentalFalls,
+    translation = NoAccidentalFalls_AllowManualClimb,
+}

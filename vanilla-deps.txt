@@ -1,0 +1,26 @@
+# checked: 42.22.2
+# kind	target	note
+lua-wrap	ISClimbOverFence:isValid	media/lua/client/TimedActions/ISClimbOverFence.lua:5, calls original, installed OnGameStart
+lua-wrap	ISClimbThroughWindow:isValid	media/lua/client/TimedActions/ISClimbThroughWindow.lua:5, calls original, installed OnGameStart
+lua-call	ISClimbOverFence:getFacingDirection	ISClimbOverFence.lua:43, gives the climb direction (action.direction or from the fence square)
+lua-field	ISClimbOverFence.item / ISClimbThroughWindow.item / .character	action fields set in :new
+event	Events.OnPlayerUpdate	edge guard, every frame per local player
+event	Events.OnGameStart	installs the wraps
+java-call	IsoGridSquare:TreatAsSolidFloor() / HasStairs() / HasStairsBelow()	drop test
+java-call	IsoCell:getGridSquare(x,y,z)
+java-call	IsoGameCharacter:getFallTime() / setFallTime() / isbFalling() / setbFalling() / isClimbing() / getCurrentState() / getVehicle() / isDead()
+java-call	IsoPlayer:isNoClip() / isLocalPlayer() / getPlayerNum() / setHaloNote()
+java-call	IsoMovingObject:setX/Y/Z, setLastX/Y/Z, setNextX/Y, setCurrentSquareFromPosition()	putting the player back
+java-call	IsoWindow/IsoThumpable/IsoWindowFrame:getNorth() / haveSheetRope() / getSquare()	window side and sheet rope (pcall)
+java-call	ClimbOverFenceState / ClimbThroughWindowState / ClimbOverWallState .instance()	skip the edge guard while climbing
+sandbox	NoAccidentalFalls.EdgeGuard / ClimbGuard / AllowManualClimb	own options
+assume	drop rule = IsoPlayer.isSafeToClimbOver (no TreatAsSolidFloor and no HasStairsBelow; water not counted)	IsoPlayer.java (decompiled 42.22.2), used the same way so mod and vanilla agree
+assume	vanilla refuses running vaults onto a drop	IsoMovingObject.checkVaultOver -> player.isSafeToClimbOver(dir); if this goes, sprinting over a balcony railing is no longer stopped (the mod does not cover auto vaults)
+assume	vanilla refuses tall-wall climbs onto a drop	IsoPlayer.canClimbOverWall -> isSafeToClimbOver
+assume	short E on a fence onto a drop does nothing, long E (>= 0.5 s) climbs	IsoPlayer.doContextHopOverFence: timePressedContext < 0.5 and not safe -> no; long press -> contextual ClimbOverFence -> Lua ISClimbOverFence
+assume	a fall starts with getFallTime() > 0 on the frame after the player's square loses its floor; walking on floor keeps it 0	IsoGameCharacter.updateFalling (land branch resets fallTime every frame)
+assume	clamping X/Y (setX + setNextX) after the move is how vanilla keeps the player off stair side walls	IsoMovingObject.java (decompiled 42.22.2) ~line 320: setX(floor(x) + 0.2); the edge clamp does the same with margin 0.25
+java-call	IsoGridSquare:getLadderUnder()	ladder top: smaller edge margin (LADDER_MARGIN 0.1)
+assume	vanilla walks the player to 0.2 from the roof edge before climbing down a ladder	ISWorldObjectContextMenu.onClimbLadder (x/y +0.2 or +0.8); with the 0.25 margin the walk never ended (tested 2026-11-17)
+assume	ladder/rope climbing runs in ClimbState / ClimbDownState / *SheetRope* states	state class names matched by text in busy(); renamed states would let the edge guard act mid-climb
+java-call	IsoObject:haveSheetRope() on a hoppable railing	railing with a sheet rope is the way down, never refused

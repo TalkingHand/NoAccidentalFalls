@@ -1,0 +1,9 @@
+{
+    "Sandbox_NoAccidentalFalls": "No Accidental Falls",
+    "Sandbox_NoAccidentalFalls_EdgeGuard": "가장자리 걸어나가기 막기",
+    "Sandbox_NoAccidentalFalls_EdgeGuard_tooltip": "난간 없는 발코니, 지붕 끝, 덜 지은 바닥처럼 아래가 비어 있는 곳으로 걷거나 달려 나가면 가장자리에서 멈춥니다.",
+    "Sandbox_NoAccidentalFalls_ClimbGuard": "추락하는 넘기 확인",
+    "Sandbox_NoAccidentalFalls_ClimbGuard_tooltip": "낮은 울타리·난간 넘기와 창문 넘기를 확인합니다. 달리다 넘기와 벽 넘기는 바닐라가 이미 추락 쪽이면 막습니다.",
+    "Sandbox_NoAccidentalFalls_AllowManualClimb": "직접 넘는 건 허용",
+    "Sandbox_NoAccidentalFalls_AllowManualClimb_tooltip": "켜면 상호작용 키(E)를 길게 누르거나 메뉴에서 넘어가기·창문 넘기를 고른 경우는 추락 쪽이어도 넘습니다. 끄면 그것도 막습니다(시트로프가 걸린 창문·난간은 제외)."
+}
