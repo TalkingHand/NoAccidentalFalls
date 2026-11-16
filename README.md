@@ -29,7 +29,7 @@ Falls the mod does not cause are left alone: a floor that collapses under you, b
 
 ## Install
 
-Steam Workshop (link after upload), or copy `Contents/mods/NoAccidentalFalls` into `%USERPROFILE%\Zomboid\mods\`.
+[Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=3841006282), or copy `Contents/mods/NoAccidentalFalls` into `%USERPROFILE%\Zomboid\mods\`.
 
 ## Testing
 
