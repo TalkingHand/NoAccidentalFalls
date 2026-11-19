@@ -1,0 +1,35 @@
+在阳台或屋顶上多走一步,不该让角色丢掉性命。No Accidental Falls 会让你在下方悬空的地板边缘停下,就像那里有一堵墙,从此不会再从没有栏杆的阳台、屋顶边缘或未完工的楼层上一不小心走下去。
+
+[b]楼梯、梯子、逃脱绳、窗户和翻越围栏都与原版相同。[/b]
+
+[h2]功能[/h2]
+[list]
+[*][b]不会走出边缘:[/b]在地板尽头、下方悬空的地方,行走、奔跑和冲刺都会在边缘停下。仍然可以沿着边缘行走。
+[*][b]翻越到悬空处(可选):[/b]如果另一侧下方悬空,原版已经会拒绝奔跑时的自动翻越和翻墙。主动翻越(在栏杆前按住 E,或从右键菜单选择 [b]翻越[/b] / [b]爬过[/b])默认仍会翻过去。关闭 [b]Allow deliberate climbs over a drop[/b] 后这些也会被拒绝,角色会说 "Too high to climb down here"。挂有逃脱绳的窗户和栏杆仍可翻越。
+[/list]
+
+[h2]沙盒选项[/h2]
+本模组的选项在游戏中以英文显示。
+[table]
+[tr][th]选项[/th][th]默认值[/th][th]说明[/th][/tr]
+[tr][td]Block walking off edges[/td][td]开启[/td][td]走向或跑向下方悬空的地方时,会在边缘停下。[/td][/tr]
+[tr][td]Guard climbs over a drop[/td][td]开启[/td][td]检查翻越矮围栏、栏杆和窗户。只有在关闭下一个选项时才起作用。[/td][/tr]
+[tr][td]Allow deliberate climbs over a drop[/td][td]开启[/td][td]开启:主动翻越仍会翻向悬空处。关闭:这些也会被拒绝,挂有逃脱绳的窗户或栏杆除外。[/td][/tr]
+[/table]
+
+[h2]限制[/h2]
+[list]
+[*]角色会停在离悬空边缘 0.25 格的位置(梯子顶部为 0.1 格),因此通常根本不会开始坠落。
+[*]其他坠落(例如地板塌陷)不会被阻止。
+[*]已在单人游戏中测试了真实按键、梯子、楼梯、二楼窗户和逃脱绳。尚未测试手柄和多人游戏。
+[/list]
+
+[h2]兼容性[/h2]
+[list]
+[*]纯 Lua,在客户端运行,不替换原版文件。
+[*]可以随时添加到现有存档或从中移除。
+[/list]
+
+Source: https://github.com/TalkingHand/NoAccidentalFalls
+
+[url=https://ko-fi.com/talkinghands2285][img]https://raw.githubusercontent.com/TalkingHand/NoAccidentalFalls/main/art/kofi_button.png[/img][/url]

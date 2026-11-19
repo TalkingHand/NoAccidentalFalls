@@ -1,0 +1,34 @@
+One step too many on a balcony or a roof should not kill your character. No Accidental Falls stops you at the edge of a floor over open air, as if there were a wall there, so you no longer walk off a balcony without a railing, a roof edge or an unfinished upper floor by accident.
+
+[b]Stairs, ladders, sheet ropes, windows and fence climbs work as before.[/b]
+
+[h2]Features[/h2]
+[list]
+[*][b]No walking off edges:[/b] where the floor ends over open air, walking, running and sprinting all stop at the edge. You can still walk along the edge.
+[*][b]Climbs onto a drop (optional):[/b] vanilla already refuses running vaults and wall climbs onto a drop. A deliberate climb (holding E at a railing, or [b]Climb over[/b] / [b]Climb through[/b] from the right-click menu) still goes over by default. Turn off [b]Allow deliberate climbs over a drop[/b] to refuse those too; your character then says "Too high to climb down here". Windows and railings with a sheet rope stay allowed.
+[/list]
+
+[h2]Sandbox options[/h2]
+[table]
+[tr][th]Option[/th][th]Default[/th][th]Description[/th][/tr]
+[tr][td]Block walking off edges[/td][td]On[/td][td]Walking or running into open air over a drop stops you at the edge.[/td][/tr]
+[tr][td]Guard climbs over a drop[/td][td]On[/td][td]Checks climbs over low fences and railings and through windows. It only has an effect while the next option is off.[/td][/tr]
+[tr][td]Allow deliberate climbs over a drop[/td][td]On[/td][td]On: deliberate climbs still go over a drop. Off: they are refused too, unless the window or railing has a sheet rope.[/td][/tr]
+[/table]
+
+[h2]Limits[/h2]
+[list]
+[*]Your character is kept 0.25 tiles back from an open-air edge (0.1 at the top of a ladder), so the fall normally never starts.
+[*]Other falls, such as through a collapsing floor, are not prevented.
+[*]Tested in single player with real key presses, ladders, stairs, upper-floor windows and sheet ropes. Gamepad and multiplayer are not tested yet.
+[/list]
+
+[h2]Compatibility[/h2]
+[list]
+[*]Lua only, runs on the client. No vanilla files are replaced.
+[*]Safe to add to or remove from an existing save.
+[/list]
+
+Source: https://github.com/TalkingHand/NoAccidentalFalls
+
+[url=https://ko-fi.com/talkinghands2285][img]https://raw.githubusercontent.com/TalkingHand/NoAccidentalFalls/main/art/kofi_button.png[/img][/url]
